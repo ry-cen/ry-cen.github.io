@@ -1,0 +1,33 @@
+.navbar {
+    background-color: rgba(0, 0, 0, 1);
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 1000;
+    top: 0;
+}
+
+.navbar-nav {
+    padding-top: 0.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 0.5%;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+}
+
+.nav-item {
+    color: white;
+    text-align: center;
+    padding: .75% 2%;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-item:hover {
+    color: #000000;
+    background-color: #B82601;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
