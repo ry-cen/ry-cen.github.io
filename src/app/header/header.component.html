@@ -1,9 +1,14 @@
 <nav class="navbar navbar-expand navbar-dark bg-dark">
     <div class="navbar-nav">
-        <a mat-button class="nav-item" routerLink="/">Home</a>
-        <span class="spacer"></span>
-        <a mat-button class="nav-item" routerLink="/about">About</a>
-        <a mat-button class="nav-item" routerLink="/projects">Projects</a>
-        <a mat-button class="nav-item" routerLink="/contact">Contact</a>
+        <ul class="nav-list">
+            <a mat-icon-button class="home" routerLink="/"><mat-icon fontIcon="home"></mat-icon></a>
+            <span class="spacer"></span>
+            <a mat-icon-button class="nav-button-mobile">
+                <mat-icon fontIcon="menu"></mat-icon>
+            </a>
+            <a mat-button class="nav-item" routerLink fragment="about">About</a>
+            <a mat-button class="nav-item" routerLink fragment="projects">Projects</a>
+            <a mat-button class="nav-item" routerLink fragment="contact">Contact</a>
+        </ul>
     </div>
 </nav>
