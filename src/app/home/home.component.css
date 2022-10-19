@@ -1,7 +1,4 @@
-.background {
-    
-    background: linear-gradient(90deg,rgba(184,38,1,1) 60%,  rgba(6,47,79,1));
-}
+
 
 
 mat-card-title {
@@ -13,25 +10,27 @@ mat-card-title {
 
 .sub-p {
     width: 100%;
-    margin-top: 6%;
-    margin-bottom:0;
+    padding-left: 2vw;
     font-size: 30px;
 }
 
 .main-p {
+    text-align: center;
+    padding-left: 1vw;
     width: 100%;
-    margin-left: 0;
-    margin-top:0;
     font-size: 80px;
 }
 
 .content-card {
-    align-items: left;
+    align-items: center;
     width: 100%;
     max-width:max-content;
-    padding: 0 1rem 0 8rem;
-    margin: 0 1rem 0 8rem;
+    padding: 5vh 20vw 5vh 20vw;
 
+}
+
+.social-media-buttons {
+    
 }
 
 @media screen and (max-width: 700px){
@@ -44,15 +43,11 @@ mat-card-title {
 
     .sub-p {
         width: 100%;
-        margin-top: 6%;
-        margin-right: 0;
-        margin-bottom:0;
         font-size: 30px;
     }
     
     .main-p {
         width: 100%;
-        margin-top:0 ;
         font-size: 80px;
     }
 }

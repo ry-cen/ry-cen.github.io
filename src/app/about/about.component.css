@@ -1,0 +1,11 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    align-items: left;
+    width: 60vw;
+    max-width:max-content;
+    margin: 3vw 20vw 0 20vw;
+}

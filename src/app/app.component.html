@@ -1,7 +1,28 @@
 <body>
-	<app-header></app-header>
-	<app-home></app-home>
-	<app-about></app-about>
-	<app-projects></app-projects>
-	<app-contact></app-contact>
+	<mat-sidenav-container>
+		<mat-sidenav #sidenav role="navigation" class="sidenav" position="end">
+			<ul class="nav-list">
+				<a mat-button class="nav-item" routerLink="/">Home</a>
+				<a mat-button class="nav-item" routerLink fragment="about">About</a>
+				<a mat-button class="nav-item" routerLink fragment="projects">Projects</a>
+				<a mat-button class="nav-item" routerLink fragment="contact">Contact</a>
+			</ul>
+		</mat-sidenav>
+		<mat-sidenav-content>
+			<main>
+				<div class="background-top">
+					<div>
+						<app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+						<app-home></app-home>
+					</div>
+				</div>
+				<div class="background-content">
+					<app-about></app-about>
+					<app-projects></app-projects>
+					<app-contact></app-contact>
+				</div>
+			</main>
+		</mat-sidenav-content>
+	</mat-sidenav-container>
+	
 </body>

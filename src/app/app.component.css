@@ -2,3 +2,43 @@ html, body{
     margin: 0;
     padding: 0;
 }
+
+.background-top {
+    background: linear-gradient(180deg,rgba(184,38,1,0.5),  rgba(0,0,0,1));
+}
+
+.background-content {
+    background: #131516;
+}
+
+.app-header{
+    position: sticky
+}
+
+.nav-list {
+    height: fit-content;
+    display:grid;
+    grid-row-gap: 3vh;
+}
+
+.nav-item {
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+    height: 100%;
+}
+
+mat-sidenav {
+    background-color: black;
+    width: 200px;
+}
+
+@media screen and (min-width: 700px) {
+    .sidenav{
+        display: none
+    }
+}
