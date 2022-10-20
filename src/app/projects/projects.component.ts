@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
+  projects = [{"name": "Portfolio Site"}]
+
   constructor() { }
 
   ngOnInit(): void {

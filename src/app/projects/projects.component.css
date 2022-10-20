@@ -1,0 +1,38 @@
+.flex-container {
+    gap: 1.5vw;
+    display: grid;
+    grid-template-rows: 30vh;
+    grid-template-columns: 19vw 19vw 19vw;
+}
+
+.content {
+    align-items: left;
+    width: auto;
+    margin: 3vw 19vw 0 20vw;
+}
+
+.project {
+    width: auto;
+    height: 20vh;
+}
+
+mat-card {
+    box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+}
+
+@media (max-width: 700px) {
+    .flex-container {
+        grid-template-columns: 39vw 39vw;
+    }
+
+    .content {
+        align-items: left;
+        width: auto;
+        max-width:max-content;
+        margin: 3vw 10vw 0 10vw;
+    }
+
+    mat-card {
+        width:75vw;
+    }
+}

@@ -7,6 +7,10 @@ mat-card-title {
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
 }
+.flex-container {
+    gap:0.5vh;
+    display:grid;
+}
 
 .sub-p {
     width: 100%;
@@ -37,7 +41,7 @@ mat-card-title {
     .content-card {
         width: 100%;
         max-width:max-content;
-        padding: 0 1vw 0 1vw;
+        padding: 5vh 10vw 5vh 0vw;
         margin: auto;
     }
 
@@ -47,6 +51,7 @@ mat-card-title {
     }
     
     .main-p {
+        padding-left: 0;
         width: 100%;
         font-size: 80px;
     }
