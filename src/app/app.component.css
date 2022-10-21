@@ -21,10 +21,7 @@ html, body{
 
 
 @media screen and (max-width: 700px) {
-
-    .content {
-    }
-
+    
     html, body {
         font-size: 15px;
         height: auto;

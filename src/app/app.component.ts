@@ -1,7 +1,5 @@
-import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
-import { Router, RouterEvent, Scroll, Event } from '@angular/router';
+import { Component, } from '@angular/core';
 import { NgxSpinnerService } from 'ngx-spinner';
-import { filter, delay, map } from 'rxjs/operators';
 
 
 @Component({
@@ -14,16 +12,20 @@ import { filter, delay, map } from 'rxjs/operators';
 export class AppComponent {
   title = 'portfolio-site';
 
-  constructor (private spinner: NgxSpinnerService, private router: Router) {}
+  constructor (private spinner: NgxSpinnerService) {}
 
   
   ngOnInit() {
     this.spinner.show();
     setTimeout(() => {
         this.spinner.hide();
-    }, 2000);
+    }, 1000);
 
     window.addEventListener("scroll", this.scroll, true);
+
+    const intersectionObserver = new IntersectionObserver((entry) => {
+      
+    })
   
   }
 
