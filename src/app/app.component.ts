@@ -25,40 +25,23 @@ export class AppComponent {
 
     window.addEventListener("scroll", this.scroll, true);
   
-    this.router.events
-        .pipe(
-
-          //take only scroll events that have an anchor specified
-          filter((e: any) => e instanceof Scroll && !!e.anchor),
-
-          //wait for the DOM to resolve. It worked with 10, but it was a small test case
-          //so I used 100 just in case
-          delay(1000),
-
-          //take the element that the anchor points to
-          map((e: Scroll) => document.getElementById(String(e.anchor))),
-
-          //ignore if no element was found
-          filter(el => !!el)
-        )
-        .subscribe(el => 
-            document.scrollingElement!
-                 .scroll(
-                     0, 
-                     window.scrollY + el!.getBoundingClientRect().top - (64 + 16)
-                 ));
   }
 
   ngOnDestroy() {
     window.removeEventListener("scroll", this.scroll);
   }
 
+  onClick() {
+    const sidenav = document.querySelector('.navbar-side') as HTMLElement;
+
+    sidenav.classList.remove('show');
+  }
+
   scroll() {
-    let content = document.querySelector('mat-sidenav-content') as HTMLElement;
     let element = document.querySelector('header') as HTMLElement;
     let footerElement = document.querySelector('footer') as HTMLElement;
     let home = document.querySelector('.background-top') as HTMLElement;
-		if (content.scrollTop >= (home.clientHeight - window.innerHeight/10)) {
+		if (window.scrollY >= (home.clientHeight - (12*window.innerHeight)/100)) {
       element.classList.add('black')
       footerElement.classList.add('fade-in')
 		} else {

@@ -1,16 +1,24 @@
 <header>
     <nav class="navbar">
         <div class="navbar-nav">
-            <ul class="nav-list">
-                <a mat-icon-button class="nav-item home" routerLink="/"><mat-icon fontIcon="home"></mat-icon></a>
+            <ul class="nav-list-top">
+                <a mat-icon-button class="nav-item home" href="/"><mat-icon fontIcon="home"></mat-icon></a>
                 <span class="spacer"></span>
                 <a mat-icon-button (click)="onToggleSidenav()" class="nav-button-mobile">
-                    <mat-icon fontIcon="menu"></mat-icon>
+                    <mat-icon class="menu-icon" fontIcon="menu"></mat-icon>
                 </a>
-                <a mat-button class="nav-item" routerLink fragment="about">About</a>
-                <a mat-button class="nav-item" routerLink fragment="projects">Projects</a>
-                <a mat-button class="nav-item" routerLink fragment="contact">Contact</a>
+                <a mat-button class="nav-item" href="#about">About</a>
+                <a mat-button class="nav-item" href="#projects">Projects</a>
+                <a mat-button class="nav-item" href="#contact">Contact</a>
                 
+            </ul>
+        </div>
+        <div class="navbar-side">
+            <ul class="nav-list-side">
+                <a mat-button class="nav-item-mobile" href="/">Home</a>
+                <a mat-button class="nav-item-mobile" href="#about">About</a>
+                <a mat-button class="nav-item-mobile" href="#projects">Projects</a>
+                <a mat-button class="nav-item-mobile" href="#contact">Contact</a>
             </ul>
         </div>
         

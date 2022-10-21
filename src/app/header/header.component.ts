@@ -7,19 +7,17 @@ import { Component, OnInit, Output, EventEmitter, HostListener } from '@angular/
 })
 export class HeaderComponent implements OnInit {
 
-  @Output() public sidenavToggle = new EventEmitter();
-
   constructor() { }
 
   ngOnInit(): void {
   }
-
-  
   
 
 
   onToggleSidenav = () => {
-    this.sidenavToggle.emit();
+    const sidenav = document.querySelector('.navbar-side') as HTMLElement;
+
+    sidenav.classList.add('show');
   }
 
 }

@@ -18,6 +18,11 @@
     box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
 }
 
+.anchor {
+    position:absolute;
+    margin-top: -9vh;
+}
+
 @media (max-width: 700px) {
     .flex-container {
         grid-template-columns: 80vw;
