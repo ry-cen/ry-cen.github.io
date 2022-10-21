@@ -1,16 +1,18 @@
-<nav class="navbar navbar-expand">
-    <div class="navbar-nav">
-        <ul class="nav-list">
-            <a mat-icon-button class="nav-item" routerLink="/"><mat-icon fontIcon="home"></mat-icon></a>
-            <span class="spacer"></span>
-            <a mat-icon-button (click)="onToggleSidenav()" class="nav-button-mobile">
-                <mat-icon fontIcon="menu"></mat-icon>
-            </a>
-            <a mat-button class="nav-item" routerLink fragment="about">About</a>
-            <a mat-button class="nav-item" routerLink fragment="projects">Projects</a>
-            <a mat-button class="nav-item" routerLink fragment="contact">Contact</a>
-            
-        </ul>
-    </div>
-    
-</nav>
+<header>
+    <nav class="navbar">
+        <div class="navbar-nav">
+            <ul class="nav-list">
+                <a mat-icon-button class="nav-item home" routerLink="/"><mat-icon fontIcon="home"></mat-icon></a>
+                <span class="spacer"></span>
+                <a mat-icon-button (click)="onToggleSidenav()" class="nav-button-mobile">
+                    <mat-icon fontIcon="menu"></mat-icon>
+                </a>
+                <a mat-button class="nav-item" routerLink fragment="about">About</a>
+                <a mat-button class="nav-item" routerLink fragment="projects">Projects</a>
+                <a mat-button class="nav-item" routerLink fragment="contact">Contact</a>
+                
+            </ul>
+        </div>
+        
+    </nav>
+</header>

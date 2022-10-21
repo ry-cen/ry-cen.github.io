@@ -1,10 +1,19 @@
 .navbar {
     padding: 0.25vh 2vw;
     background-color: transparent;
-    z-index: 1000;
+    transition: 0.2s
+}
+
+header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 1000;
+
+}
+
+.navbar-black {
+    background-color: #000000;
 }
 
 .navbar-nav {
@@ -16,11 +25,7 @@
     height: fit-content;
     list-style: none;
     display: flex;
-}
-
-.home {
-    color: white;
-    text-align: left;
+    gap: 1vw;
 }
 
 .nav-button-mobile {
@@ -35,14 +40,22 @@ mat-icon {
     vertical-align: middle;
 }
 
-.nav-item {
+.nav-item:not(.home) {
+    padding-top:.1em;
     color: white;
     text-align: center;
     text-decoration: none;
-    font-size: 17px;
+    
+    
+}
+
+.nav-item {
+    transition: 250ms;
+    font-size: 1.02em;
 }
 
 .nav-item:hover {
+    transform: scale(1.1);
     color: #000000;
     background-color: #B82601;
 }
