@@ -2,7 +2,7 @@
     gap: 1.5vw;
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 19vw 19vw 19vw;
+    grid-template-columns: 29.5vw 29.5vw;
 }
 
 .content {

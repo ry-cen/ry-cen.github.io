@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
@@ -14,6 +14,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
 	declarations: [
@@ -22,7 +23,8 @@ import { HeaderComponent } from './header/header.component';
 		ProjectsComponent,
 		AboutComponent,
 		ContactComponent,
-		HeaderComponent
+		HeaderComponent,
+  		FooterComponent
 	],
 	imports: [
 		BrowserModule,
@@ -35,6 +37,7 @@ import { HeaderComponent } from './header/header.component';
 		RouterModule
 	],
 	providers: [],
-	bootstrap: [AppComponent]
+	bootstrap: [AppComponent],
+	schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

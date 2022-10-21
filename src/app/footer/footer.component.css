@@ -1,0 +1,37 @@
+footer {
+    transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: -5vw;
+    position: sticky;
+    bottom: 8vh;
+    z-index: 1000;
+    height: 60px;
+    width: fit-content;
+}
+
+.social-media-buttons {
+    gap: 3vh;
+    bottom: 2vh;
+    display:flex;
+    flex-wrap: wrap;
+    width:5vw;
+}
+
+.social-media-buttons a {
+    font-size: 2em;
+}
+
+.fade-in {
+    transform: translateX(5.5vw);
+    opacity: 1;
+}
+
+.social-media-buttons a:hover{
+    transform: scale(1.5)
+}
+
+@media (max-width:700px) {
+    footer {
+        display: none;
+    }
+    
+}

@@ -27,7 +27,6 @@ mat-card-title {
 }
 
 .content-card {
-    background: linear-gradient(180deg,rgb(139, 0, 0),  rgba(0,0,0,1));
     align-items: center;
     padding: 5vh 20vw 5vh 20vw;
 

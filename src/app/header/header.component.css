@@ -1,10 +1,10 @@
 .navbar {
     padding: 0.25vh 2vw;
     background-color: transparent;
-    transition: 0.2s
 }
 
 header {
+    transition: 0.2s ease-in-out;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -12,8 +12,8 @@ header {
 
 }
 
-.navbar-black {
-    background-color: #000000;
+.black {
+    background: rgb(0, 0, 0, 0.8);
 }
 
 .navbar-nav {

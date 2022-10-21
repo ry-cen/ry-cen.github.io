@@ -1,20 +1,18 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
-import { HomeComponent } from './home/home.component';
-import { ProjectsComponent } from './projects/projects.component';
+import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 
-const routes: Routes = [
-	{ path: '', component: HomeComponent },
-	{ path: 'about', component: ProjectsComponent },
-	{ path: 'projects', component: AboutComponent },
-	{ path: 'contact', component: ContactComponent }
+const routes: Routes = [];
 
-];
+const routerOptions: ExtraOptions = {
+    anchorScrolling: 'enabled', 
+	onSameUrlNavigation: 'reload', 
+	scrollPositionRestoration: 'enabled',
+	scrollOffset: [0, 64 + 16]
+};
+
 
 @NgModule({
-	imports: [RouterModule.forRoot(routes)],
+	imports: [RouterModule.forRoot(routes, routerOptions)],
 	exports: [RouterModule]
 })
 export class AppRoutingModule { }

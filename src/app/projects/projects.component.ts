@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  projects = [{"name": "Portfolio Site"}]
+  projects = [{"name": "Portfolio Site"}, {"name": "Multiplayer Shogi Game"}, {"name": "Cash Wallet"}, {"name": "L-Store Database"}, {"name": "3D Model Viewer"}, {"name" : "Rush Hour Solver"}]
 
   constructor() { }
 

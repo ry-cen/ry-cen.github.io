@@ -6,7 +6,7 @@ html, body{
 }
 
 .background-top {
-    background: linear-gradient(180deg,rgb(139, 0, 0),  rgba(0,0,0,1));
+    background: linear-gradient(180deg,rgb(139, 0, 0) ,  rgba(0,0,0,1));
 }
 
 .background-content {
@@ -42,16 +42,12 @@ html, body{
     font-size: 20px;
 }
 
-
 mat-sidenav {
     background-color: black;
     width: 200px;
 }
 
 @media screen and (max-width: 700px) {
-    .sidenav{
-        display: none
-    }
 
     html, body {
         font-size: 15px;

@@ -1,9 +1,9 @@
 <div class="content">
     <h2> Projects </h2>
     <div flex class="flex-container">
-        <mat-card class="project" *ngFor="let index of [0]">
+        <mat-card class="project" *ngFor="let project of projects">
             <mat-card-title>
-                <h3>{{this.projects[index]["name"]}}</h3>
+                <h3>{{project["name"]}}</h3>
             </mat-card-title>
         </mat-card>
     </div>
