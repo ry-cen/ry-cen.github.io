@@ -1,0 +1,41 @@
+.flex-container {
+    gap: 1.5vw;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 29.5vw 29.5vw;
+}
+
+.content {
+    font-size: 1em;
+    align-items: left;
+    width: auto;
+    margin: 3vw 19vw 0 20vw;
+}
+
+.project {
+    width: auto;
+    height: 20vh;
+    box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+}
+
+.anchor {
+    position:absolute;
+    margin-top: -6vh;
+}
+
+@media (max-width: 700px) {
+    .flex-container {
+        grid-template-columns: 80vw;
+    }
+
+    .content {
+        align-items: left;
+        width: auto;
+        max-width: max-content;
+        margin: 3vw 10vw 0 10vw;
+    }
+
+    mat-card {
+        width:75vw;
+    }
+}
