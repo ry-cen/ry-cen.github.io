@@ -1,0 +1,75 @@
+.content {
+    font-size: 1em;
+    align-items: left;
+    width: auto;
+    margin: 10vh 20vw 0 20vw;
+}
+
+mat-card {
+    transition: 0.5s ease;
+    background: black;
+    box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+}
+
+mat-card:hover {
+    transform: scale(1.02)
+}
+
+.anchor {
+    position:absolute;
+    margin-top: -5vh;
+}
+
+.grid-container {
+    margin: 0vh 1vw 3vh 1vw;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template: 
+        "a a" auto
+        "div div";
+}
+
+.course-container {
+    font-size: 0.9em;
+    margin-left: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+
+.course-container span {
+    padding: 3px;
+    border-radius: 10px;
+    background-color:rgb(24, 24, 24)
+}
+
+.align {
+    text-align: right;
+}
+
+@media (max-width: 700px) {
+
+    .grid-container {
+        margin: 1vw;
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        grid-template: auto / auto;
+    }
+
+    .grid-container *{
+        height:fit-content;
+    }
+
+    .content {
+        align-items: left;
+        width: auto;
+        max-width:max-content;
+        margin: 10vh 10vw 0 10vw;
+    }
+
+    .align {
+        text-align: left;
+    }
+}

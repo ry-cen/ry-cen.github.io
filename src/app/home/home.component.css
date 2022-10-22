@@ -27,8 +27,14 @@ mat-card-title {
 }
 
 .content-card {
+    width:60vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4vw;
+    place-items: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 5vh 20vw 5vh 20vw;
+    padding: 10vh 40vw 15vh 20vw;
 
 }
 
@@ -46,18 +52,36 @@ mat-card-title {
     transform: scale(1.5)
 }
 
+.pic {
+    align-self: flex-end;
+    width: 15em;
+    height:15em;
+
+    box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+    
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%; 
+}
+
 @media screen and (max-width: 700px){
     .content-card {
-        width: 100%;
+        width: 90%;
         max-width:max-content;
-        padding: 5vh 10vw 5vh 0vw;
-        margin: auto;
+        padding: 5vh 0vw 5vh 0vw;
+        margin-left: 5vw;
     }
 
     .sub-p {
         padding-left: 4vw;
         width: 100%;
         font-size: 1em;
+    }
+
+    .pic {
+        margin: 0 auto;
     }
     
     .main-p {

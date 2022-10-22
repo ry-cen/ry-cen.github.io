@@ -1,11 +1,23 @@
 <a id="projects" class="anchor"></a>
 <div class="content">
-    <h2> Projects </h2>
+    <h2><b>Projects</b></h2>
     <div flex class="flex-container">
         <mat-card class="project" *ngFor="let project of projects">
-            <mat-card-title>
-                <h3>{{project["name"]}}</h3>
-            </mat-card-title>
+            <div class="project-contents">
+                <div class="project-title">
+                    <span>{{project["name"]}}</span>
+                    <a href="{{project['link']}}" class="github-link"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="project-desc">
+                    <p><u>{{project["tools"]}}</u></p>
+                    <p>{{project["desc"]}}</p>
+                </div>
+                <div class="project-bullets">
+                    <ul class="bullet-list" *ngFor="let bullet of project['bullets']">
+                        <li><p>{{bullet}}</p>
+                    </ul>
+                </div>
+            </div>
         </mat-card>
     </div>
 </div>

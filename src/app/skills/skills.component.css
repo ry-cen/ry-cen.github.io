@@ -1,0 +1,54 @@
+.content {
+    font-size: 1em;
+    width: 60vw;
+    margin: 10vh 20vw 0 20vw;
+}
+
+.grid-container {
+    margin-left: 1vw;
+    width: 100%;
+    display: grid;
+    gap:2vw;
+    grid-template-columns: auto auto;
+}
+
+
+.flex-container {
+    font-size: 0.95em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+
+.flex-container * {
+    height: fit-content;
+    padding: 3px;
+    border-radius: 10px;
+    background-color:rgb(24, 24, 24)
+}
+
+mat-card {
+    transition: 0.5s ease;
+    background: black;
+    box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+    width:auto;
+}
+
+
+mat-card:hover {
+    transform: scale(1.02)
+}
+
+.anchor {
+    position:absolute;
+    margin-top:-5vh
+}
+
+
+@media (max-width:700px) {
+    .content {
+        width: 80vw;
+        margin: 10vh 10vw 0 10vw;
+    }
+}
