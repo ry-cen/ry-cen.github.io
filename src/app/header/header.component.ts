@@ -20,4 +20,10 @@ export class HeaderComponent implements OnInit {
     sidenav.classList.add('show');
   }
 
+  onClickMenuItem = () => {
+    const sidenav = document.querySelector('.navbar-side') as HTMLElement;
+
+    sidenav.classList.remove('show');
+  }
+
 }
